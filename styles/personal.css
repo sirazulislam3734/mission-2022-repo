@@ -1,7 +1,7 @@
 body{
     max-width: 1440px;
     /* background-color: black; */
-    margin: 0 auto;
+    margin: 0px auto;
 }
 .section-1-container{
     height: 500px;
@@ -10,7 +10,6 @@ body{
     align-items: center;
     gap: 30px;
     margin: 0px auto 0px auto;
-    border: 1px solid black;
 }
 .section1-title{
     padding-left: 80px;
@@ -29,13 +28,13 @@ body{
     width: 420px;
     display: flex;
     flex-direction: row;
-    height: 480px;
+    height: 520px;
     padding: 0px 80px 20px 20px;
 }
 .section1-image img{
     width: 100%;
 }
-button{
+.btn-primary{
     padding: 15px 22px;
     border-radius: 5px;
     color: white;
@@ -44,37 +43,238 @@ button{
     background: rgb(255, 89, 89);
 }
 /* main-section-1 styles */
-
 .main-section-1{
-    border: 1px solid tomato;
     margin: 60px auto;
 }
 .section-1-title{
     font-size: 3rem;
     text-align: center;
-    border: 1px solid turquoise;
 }
 .section-1-title span{
     color: rgb(255, 173, 90);
 }
 .main-section-1-container{
     margin: 0px 100px;
-    border: 1px solid tomato;
-}
-.card{
-    width: 300px;
-    height: 350px;
-    padding: 20px;
-    border: 1px solid tomato;
+    display: grid;
+    gap: 20px;
+    grid-template-areas: "a b c";
 }
 .card img{
-    width: 60%;
-    height: 50%;
+    width: 40%;
 }
+.card{
+    padding: 20px;
+    height: 350px;
+    border-radius: 15px;
+}
+.card-1{
+   grid-area: a;
+   background-color: #EDF5F6;
+}
+.card-2{
+   grid-area: b;
+   background-color: #FFEEEE;
+}
+.card-3{
+   grid-area: c;
+   background-color: #FFF4D6;
+}
+
 .card-title{
     font-size: 2rem;
     margin: 0;
 }
 .card-description{
     font-size: 1.2rem;
+}
+
+/* main-section-2 styles */
+
+.main-section-2{
+    margin: 50px auto;
+}
+.main-section-2-container{
+    margin: 0px 100px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.main-section-2-image{
+    width: 50%;
+    position: relative;
+}
+.main-section-2-image .section-2-image-1{
+    width: 100%;
+    z-index: 1;
+}
+.main-section-2-image .section-2-image-2{
+    position: absolute;
+    width: 220px;
+    height: 230px;
+    z-index: -1;
+    left: 0px;
+    margin-left: -80px;
+    top: 120px;
+}
+.main-section-2-text-title{
+    width: 60%;
+}
+.section-2-text-title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+.section-2-description{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.section-2-btn{
+    margin-bottom: 0;
+}
+
+/* main-section-3 styles */
+
+.main-section-3{
+    margin: 50px auto;
+}
+.main-section-3-container{
+    margin: 0px 100px;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    align-items: center;
+}
+.main-section-3-image{
+    width: 50%;
+    position: relative;
+}
+.main-section-3-image .section-3-image-1{
+    width: 100%;
+    z-index: 1;
+}
+.main-section-3-image .section-3-image-2{
+    position: absolute;
+    width: 220px;
+    height: 230px;
+    z-index: -1;
+    right: 0px;
+    margin-right: -80px;
+    top: 390px;
+}
+.main-section-3-text-title{
+    width: 60%;
+}
+.section-3-text-title{
+    font-size: 3rem;
+    font-weight: 700;
+    margin: 0;
+}
+.section-3-description{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.section-3-btn{
+    margin-bottom: 0;
+}
+
+/* info-title styles */
+
+.info-title{
+    margin: 30px 100px;
+    text-align: center;
+    font-size: 3.5rem;
+    font-weight: 900;
+}
+.info-title span{
+    color: rgb(255, 173, 90);
+}
+
+/* main-section-4 styles */
+
+.main-section-4{
+    margin: 50px auto;
+}
+.main-section-4-container{
+    margin: 0px 100px;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+}
+.main-section-4-image{
+    width: 60%;
+    position: relative;
+}
+.main-section-4-image .section-4-image-1{
+    position: relative;
+    width: 100%;
+    padding: 70px 100px 70px 50px;
+    z-index: 1;
+}
+.main-section-4-image .section-4-image-2{
+    position: absolute;
+    top: 40px;
+    left: 20px;
+    width: 200px;
+    height: 200px;
+    z-index: -1;
+}
+.main-section-4-image .section-4-image-3{
+    position: absolute;
+    width: 150px;
+    right: 0;
+    top: 550px;
+    margin-right: -40px;
+    height: 150px;
+    z-index: -1;
+}
+.main-section-4-image .section-4-image-4{
+    position: absolute;
+    bottom: 90px;
+    left: 40px;
+    width: 150px;
+    height: 150px;
+    z-index: -1;
+}
+.main-section-4-text-title{
+    width: 60%;
+    margin-left: 80px;
+}
+.section-4-text-title{
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin: 0;
+}
+.section-4-text-title span{
+    color: rgb(255, 173, 90);
+}
+.section-4-description{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+.section-4-btn{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+footer{
+    margin: 0 auto;
+    background-color: black;
+}
+.footer-title{
+    padding: 80px ;
+    text-align: center;
+}
+.footer-text-title{
+    color: white;
+    font-weight: 800;
+    font-size: 3.5rem;
+}
+.footer-text-title span{
+    color: #FF5959;
+}
+.footer-description{
+    color: white;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
 }
